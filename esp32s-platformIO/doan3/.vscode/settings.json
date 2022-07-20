@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "DHTPIN",
+        "DHTTYPE",
+        "ssid"
+    ],
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "random": "cpp"
+    },
+    "liveServer.settings.port": 5501
+}

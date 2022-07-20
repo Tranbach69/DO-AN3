@@ -1,0 +1,274 @@
+:root {
+  --colorYellow: rgb(246, 201, 14);
+}
+
+.factory {
+  background: #303841;
+  padding: 5px 0;
+  color: azure;
+  height: 100px;
+}
+
+h6 {
+  margin: 0;
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+  background-color: white;
+}
+
+.header__content-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: left;
+}
+
+.content__info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  z-index: 9;
+}
+
+.header__content-menu {
+  background-color: var(--colorYellow);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__content::before,
+.header__content::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+}
+
+.header__content::before {
+  border-top: 20px solid var(--colorYellow);
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid var(--colorYellow);
+  border-left: 20px solid transparent;
+}
+
+.header__content::after {
+  border-top: 20px solid var(--colorYellow);
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid var(--colorYellow);
+  border-right: 20px solid transparent;
+}
+
+.header__content-menu .menu__ul {
+  width: 70%;
+}
+
+.header {
+  height: 100px;
+}
+
+.header__icon {
+  padding: 5px 5px;
+  border-radius: 50%;
+  background: #ed1c24;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.icon__search {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+}
+
+.header__icon-info {
+  position: relative;
+}
+
+.title__content {
+  position: absolute;
+  top: -35px;
+  background: black;
+  color: white;
+  font-size: 0.9rem;
+  padding: 3px 5px;
+  left: -10px;
+  right: -10px;
+  border-radius: 10px;
+}
+
+.title:hover .title__content {
+  display: block !important;
+}
+
+.title__content::after {
+  content: "";
+  border-top: 10px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 20px;
+  width: 10px;
+  position: absolute;
+  left: 50%;
+}
+
+.menu__li .ul__child {
+  display: none;
+}
+
+.menu__li:hover .ul__child {
+  display: block;
+  position: absolute;
+  top: 20px;
+}
+
+.menu__ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.menu__li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 9;
+}
+
+.menu__li a {
+  color: inherit;
+}
+
+.menu__li a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text__black {
+  color: rgba(102, 102, 102, 0.85);
+}
+
+.active {
+  color: white;
+}
+
+.border__right {
+  position: relative;
+}
+
+.border__right::after {
+  content: "|";
+  padding: 0 5px;
+}
+
+.border__bottom {
+  position: relative;
+}
+
+.border__bottom::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: all 0.5s;
+  bottom: 0;
+  left: 0;
+}
+
+.border__bottom:hover.border__bottom::after {
+  content: "";
+  position: absolute;
+  color: red;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.ul__child {
+  position: absolute;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: max-content;
+  height: fit-content;
+  background-color: white;
+  z-index: 9;
+  border: 2px solid #ddd;
+  padding: 20px 0px;
+}
+
+.li__child {
+  padding: 10px 30px 10px 15px;
+  margin: 0;
+}
+
+.li__child:first-child {
+  color: black;
+}
+
+.li__child:hover {
+  background-color: #dddddd;
+  color: black;
+  opacity: 1;
+  transition: all 1s;
+}
+.form__input {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+.form__input label{
+  width: 120px;
+}
+.form__input input{
+  width : 250px ;
+}
+.row{
+  margin: 0 !important;
+}
+.column{
+  padding: 0;
+  margin: 0;
+}
+.root{
+  min-height: 100vh;
+  height:100%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-spring-medical-cartoon-vaccination-poster-picture-image_1052575.jpg");
+
+}
